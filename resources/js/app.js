@@ -1,15 +1,15 @@
-import Vue from 'vue';
-import router from './router';
-import App from './components/App';
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+import VueRouter from 'vue-router';
+import routes from './router';
 
 require('./bootstrap');
 
 window.Vue = require('vue');
+Vue.use(VueAxios, axios);
+Vue.use(VueRouter);
 
 const app = new Vue({
     el: '#app',
-    components: {
-    	App
-    },
-    router
+    router: new VueRouter(routes)
 });

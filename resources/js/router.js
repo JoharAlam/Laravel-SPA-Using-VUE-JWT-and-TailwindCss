@@ -1,12 +1,31 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import ExampleComponent from "./components/ExampleComponent";
+// import Vue from 'vue';
+// import VueRouter from 'vue-router';
+import Dashboard from './components/Dashboard';
+import About from './components/About';
+import NotFound from './components/NotFound';
+import Login from './components/Login';
+import Register from './components/Register';
+import Reset from './components/PasswordReset';
 
-Vue.use(VueRouter);
-
-export default new VueRouter({
+export default{
+	mode: 'history',
+	linkActiveClass: 'font-bold',
 	routes: [
-	{ path: '/', component: ExampleComponent }
+		{ 
+			path: '/dashboard', 
+			component: Dashboard
+		},
+		{ 
+			path: '/about', 
+			component: About
+		},
+		{ 
+			path: '/login', 
+			component: Login
+		},
+		{ 
+			path: '/register', 
+			component: Register
+		}
 	],
-	mode: 'history'
-});
+}
