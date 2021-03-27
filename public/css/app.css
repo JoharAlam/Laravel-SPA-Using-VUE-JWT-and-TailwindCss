@@ -26943,11 +26943,19 @@ video {
 }
 
 .w-90{
-  width: 20rem;
+  width: 35rem;
+}
+
+.w-95{
+  width: 40rem;
 }
 
 .w-96{
   width: 24rem;
+}
+
+.w-100{
+  width: 75rem;
 }
 
 .w-auto{
@@ -57560,11 +57568,19 @@ video {
   }
 
   .sm\:w-90{
-    width: 20rem;
+    width: 35rem;
+  }
+
+  .sm\:w-95{
+    width: 40rem;
   }
 
   .sm\:w-96{
     width: 24rem;
+  }
+
+  .sm\:w-100{
+    width: 75rem;
   }
 
   .sm\:w-auto{
@@ -88112,11 +88128,19 @@ video {
   }
 
   .md\:w-90{
-    width: 20rem;
+    width: 35rem;
+  }
+
+  .md\:w-95{
+    width: 40rem;
   }
 
   .md\:w-96{
     width: 24rem;
+  }
+
+  .md\:w-100{
+    width: 75rem;
   }
 
   .md\:w-auto{
@@ -118664,11 +118688,19 @@ video {
   }
 
   .lg\:w-90{
-    width: 20rem;
+    width: 35rem;
+  }
+
+  .lg\:w-95{
+    width: 40rem;
   }
 
   .lg\:w-96{
     width: 24rem;
+  }
+
+  .lg\:w-100{
+    width: 75rem;
   }
 
   .lg\:w-auto{
@@ -149216,11 +149248,19 @@ video {
   }
 
   .xl\:w-90{
-    width: 20rem;
+    width: 35rem;
+  }
+
+  .xl\:w-95{
+    width: 40rem;
   }
 
   .xl\:w-96{
     width: 24rem;
+  }
+
+  .xl\:w-100{
+    width: 75rem;
   }
 
   .xl\:w-auto{
@@ -179768,11 +179808,19 @@ video {
   }
 
   .\32xl\:w-90{
-    width: 20rem;
+    width: 35rem;
+  }
+
+  .\32xl\:w-95{
+    width: 40rem;
   }
 
   .\32xl\:w-96{
     width: 24rem;
+  }
+
+  .\32xl\:w-100{
+    width: 75rem;
   }
 
   .\32xl\:w-auto{
