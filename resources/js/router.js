@@ -1,19 +1,25 @@
 // import Vue from 'vue';
 // import VueRouter from 'vue-router';
-import Dashboard from './components/Dashboard';
+import ShoesDashboard from './components/ShoesDashboard';
+import GarmentsDashboard from './components/GarmentsDashboard';
 import About from './components/About';
 import NotFound from './components/NotFound';
 import Login from './components/Login';
 import Register from './components/Register';
 import Reset from './components/PasswordReset';
+import InventorySale from './components/InventorySale';
+import InventoryPurchase from './components/InventoryPurchase';
 
 export default{
 	mode: 'history',
-	linkActiveClass: 'font-bold',
 	routes: [
 		{ 
-			path: '/dashboard', 
-			component: Dashboard
+			path: '/dashboard/Shoes', 
+			component: ShoesDashboard
+		},
+		{ 
+			path: '/dashboard/Garments', 
+			component: GarmentsDashboard
 		},
 		{ 
 			path: '/about', 
@@ -26,6 +32,14 @@ export default{
 		{ 
 			path: '/register', 
 			component: Register
+		},
+		{ 
+			path: '/inventory/sale', 
+			component: InventorySale
+		},
+		{ 
+			path: '/inventory/purchase', 
+			component: InventoryPurchase
 		}
 	],
 }

@@ -24,6 +24,13 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
+  'jamesdordoy/laravelvuedatatable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'JamesDordoy\\LaravelVueDatatable\\Providers\\LaravelVueDatatableServiceProvider',
+    ),
+  ),
   'laravel/sanctum' => 
   array (
     'providers' => 
