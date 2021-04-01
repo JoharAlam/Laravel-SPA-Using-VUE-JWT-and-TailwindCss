@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Sale extends Model
 {
     protected $fillable = [
-    	'buyer', 'product', 'selling_rate',
+    	'customer_name', 'product', 'selling_rate', 'quantity', 'payment', 'category', 'retailer_id', 'sale_date',
     ];
 }

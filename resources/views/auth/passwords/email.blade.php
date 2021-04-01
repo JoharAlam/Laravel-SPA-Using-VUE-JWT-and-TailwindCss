@@ -1,49 +1,55 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="mx-auto h-full flex justify-center items-center bg-gray-300">
-    <div class="w-96 bg-blue-900 rounded-lg shadow-xl p-6">
-        <svg class="fill-current" width="100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1754.000000 1241.000000">
-            <g transform="translate(0.000000,1241.000000) scale(0.100000,-0.100000)">
-                <path d="M10970 10119 c-30 -5 -89 -26 -130 -46 -69 -33 -101 -62 -385 -343 -303 -299 -442 -426 -655 -601 -701 -573 -1435 -1024 -2034 -1249 -161 -60 -203 -64 -240 -20 -46 55 -46 47 14 1156 39 703 39 717 13 774 -23 51 -85 112 -140 136 -62 28 -161 22 -278 -16 -236 -76 -378 -180 -392 -289 -3 -20 11 -220 31 -446 97 -1108 113 -1712 51 -1860 -7 -17 -91 -132 -187 -255 -912 -1175 -1181 -1604 -1371 -2195 -227 -706 -220 -1463 18 -1960 235 -489 706 -717 1176 -569 378 119 603 383 784 917 216 639 324 1649 325 3047 0 307 14 586 32 658 10 40 28 64 132 170 67 68 150 148 186 177 133 107 147 101 106 -53 -66 -246 -70 -274 -70 -477 -1 -209 11 -281 74 -442 91 -237 308 -465 555 -583 219 -105 489 -158 675 -131 293 41 556 185 715 392 164 212 242 539 215 899 -34 454 -144 725 -413 1020 -162 178 -160 175 -152 207 10 42 222 247 625 605 195 173 371 332 389 352 39 40 60 45 83 19 32 -36 38 -96 38 -378 0 -390 -24 -771 -76 -1215 -24 -206 -42 -319 -118 -751 -103 -586 -130 -778 -130 -939 -1 -271 31 -355 158 -420 65 -33 76 -35 181 -39 121 -3 220 13 305 50 106 47 125 101 116 328 -21 551 -22 513 25 1006 29 304 157 1256 170 1270 17 17 266 9 454 -14 287 -37 423 -22 461 51 27 49 32 236 9 314 -23 82 -43 101 -118 109 -105 12 -323 54 -531 102 -183 43 -199 49 -209 73 -6 15 -13 194 -18 455 -11 661 -32 783 -155 915 -75 80 -185 111 -314 89z m-1732 -2743 c81 -42 151 -150 187 -286 22 -87 31 -314 16 -421 -34 -242 -113 -394 -235 -456 -42 -22 -64 -26 -129 -26 -66 0 -86 5 -141 32 -142 70 -213 208 -237 464 -33 357 66 604 278 693 50 21 70 24 143 21 55 -2 97 -9 118 -21z m-2363 -1173 c35 -141 30 -802 -10 -1373 -52 -725 -167 -1286 -330 -1615 -66 -133 -122 -200 -207 -245 -57 -31 -71 -34 -148 -35 -73 0 -93 4 -142 28 -135 66 -226 238 -264 497 -22 155 -15 498 15 682 109 675 378 1309 760 1793 108 138 272 295 306 295 7 0 16 -12 20 -27z"/>
-                <path d="M11950 6015 c-112 -31 -130 -60 -130 -210 0 -205 29 -365 75 -411 23
-                -23 31 -24 147 -24 135 0 282 19 340 43 47 20 53 46 52 232 0 160 -22 280 -57
-                321 -30 34 -112 53 -257 59 -85 4 -129 1 -170 -10z"/>
-            </g>
-        </svg>
-        <h1 class="text-white text-3xl pt-8">Welcome</h1>
-        <h2 class="text-blue-300">Enter your credentials below to Reset Password</h2>
+<div class="rounded-b-2xl shadow-2xl flex bg-blue-500" style="height: 230px; z-index: -1;">
+	<div class="mx-auto h-full flex justify-center items-center bg-white" style="margin-top: 125px;">
+	    <div class="bg-gray-300 p-3 rounded-2xl shadow-md">
+		    <div class="w-96 bg-white rounded-2xl shadow-xl pr-6 pl-6 pt-4 pb-4">
+		        <svg class="text-blue-500 pl-6" width="120px" xmlns="http://www.w3.org/2000/svg" 
+					viewBox="0 0 600.000000 500.000000">
+		            <g transform="translate(0.000000,516.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+						<path d="M3275 4830 l-150 -150 1048 -1048 c576 -576 1047 -1052 1047 -1059 0
+						-7 -8 -18 -17 -26 -10 -7 -481 -477 -1047 -1044 l-1030 -1032 148 -147 147
+						-148 1202 1202 1202 1202 -1200 1200 -1200 1200 -150 -150z"/>
+						<path class="fill-current" d="M1385 3773 l-1194 -1198 1197 -1197 1197 -1198 1192 1193 c656 655 1192 1198 1190 1205 -2 10 -2376 2392 -2385 2392 -2 0 -541 -539 -1197 -1197z m2669 -503 c63 -17 147 -50 164 -65 3 -3 -125 -275 -133 -283 -2 -2 -14 3 -27 11 -86 56 -324 86 -412 53 -33 -13 -47 -25 -55 -46 -19 -56 25 -87 232 -161 108 -39 156 -61 189 -87 9 -8 22 -11 28 -7 6 3 9 3 8 -2 -3 -10 71 -89 81 -86
+						4 1 7 -6 8 -15 1 -9 11 -44 23 -77 17 -47 20 -71 15 -115 -27 -218 -167 -363 -393 -406 -96 -18 -283 -18 -402 1 -103 17 -139 27 -212 57 l-47 20 70 139	c38 76 74 139 80 139 5 0 22 -6 38 -14 60 -32 195 -59 291 -59 153 -1 220 30 220 99 0 49 -38 72 -245 143 -258 90 -363 220 -336 417 26 183 157 312 365 360 92 21 347 12 450 -16z m-2567 -22 c-4 -18 -9 -78 -12 -133 -8 -137 -57 -697 -85 -980 -5 -49 -10 -102 -10 -117 l0 -28 -171 0 -171 0 7 113 c3 61 15 211 25 332 11 121 24 274 30 340 20 227 41 440 46 473 l5 32 171 0 170 0 -5 -32z m650 -208 c75 -129 157 -275 183 -323 l47 -88 37 63 c20 35 56 89 79 120 50 67 247 340 298 412 l35 51 152 3 152 3 0 -24 c0 -13 -6 -91 -14 -173 -8 -82 -18 -192 -21 -244 -3 -52 -10 -131 -15 -175 -5 -44 -12 -116 -15 -160 -8 -105 -25 -301 -30 -345 -2 -19 -7 -65 -11 -102 l-6 -68 -173 0 -173 0 4 43 c17 185 45 505 49 562 l5 70 -22 -29 c-13 -15 -91 -119 -173 -230 l-151 -201 -59 0 -59 0 -54 85 c-29 47 -56 91 -59 99 -4 8 -43 74 -88 146 l-81 132 -2 -44 c-2 -45 -37 -458 -48 -570 l-7 -63 -163 0 -164 0 0 26 c0 15 7 97 15 183 8 86 23 264 35 396 27 320 27 321 40 470 6 72 13 139 15 150 2 11 4 30 4 43	l1 23 151 -3 152 -3 134 -235z"/>
+					</g>
+		        </svg>
+		        <h1 class="text-gray-600 text-3xl pt-8">Forget Password</h1>
+		        <h6 class="text-blue-500 font-bold">Enter your email below for reset request</h6>
 
-        <form method="POST" action="{{ route('password.email') }}" class="pt-8">
-            @csrf
+		        <form method="POST" action="{{ route('password.email') }}" class="pt-6">
+		            @csrf
 
-            <div class="relative">
-                <label for="name" class="uppercase text-blue-500 text-xs font-bold absolute pl-3 pt-2">E-mail</label>
-                <input id="email" type="email" class="pt-8 w-full rounded p-3 bg-blue-800 text-gray-100 outline-none focus:bg-blue-700" name="email" 
-                value="{{ old('email') }}" placeholder="your@email.com" autocomplete="email" autofocus>
+		            <div class="relative">
+		                <label for="name" class="uppercase text-blue-300 text-xs font-bold absolute pl-3 pt-2"><i class="fa fa-envelope"></i> E-mail</label>
+		                <input id="email" type="email" class="pt-4 w-full rounded p-3 bg-blue-800 text-white placeholder-gray-300 outline-none focus:bg-blue-700" name="email" 
+		                value="{{ old('email') }}" placeholder="your@email.com" autocomplete="email" autofocus>
 
-                @error('email')
-                    <span class="text-red-500 text-sm pl-3" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-            </div>
+		                @error('email')
+		                    <span class="text-red-500 text-sm pl-3" role="alert">
+		                        <strong>{{ $message }}</strong>
+		                    </span>
+		                @enderror
+		            </div>
 
-            <div class="pt-8">
-                <button type="submit" class="w-full uppercase rounded text-left text-blue-900 bg-gray-400 py-2 px-3 font-bold">
-                    {{ __('Submit') }}
-                </button>
-            </div>
+		            <div class="pt-4">
+		                <button type="submit" class="w-full uppercase rounded text-left text-white bg-blue-500 py-2 px-3 font-bold">
+		                    {{ __('Submit') }}
+		                </button>
+		            </div>
 
-            <div class="flex justify-between pt-8 text-white text-sm font-bold">
-                <a href="{{ route('login') }}">
-                    Already a user ? Click here to Login
-                </a>
-                <a href="{{ route('register') }}">
-                    Register
-                </a>
-            </div>
-        </form>
-    </div>
+		            <div class="flex justify-between pt-8 text-white text-sm font-bold">
+		                <a href="{{ route('login') }}" class="text-blue-500 font-bold">
+		                    Already a user ? Click here to Login
+		                </a>
+		                <a href="{{ route('register') }}" class="text-blue-500 font-bold">
+		                    Register
+		                </a>
+		            </div>
+		        </form>
+		    </div>
+		</div>
+	</div>
 </div>
 @endsection

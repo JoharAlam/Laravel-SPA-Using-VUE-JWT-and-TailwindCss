@@ -13,8 +13,18 @@ return [
     |
     */
 
+    //For using JWT Auth uncomment JWT Auth and comment Laravel Auth
+    //For using Laravel Auth uncomment Laravel Auth and comment JWT Auth
+
+    // JWT Auth
+    // 'defaults' => [
+    //     'guard' => 'api',
+    //     'passwords' => 'users',
+    // ],
+
+    // Laravel Auth
     'defaults' => [
-        'guard' => 'api',
+        'guard' => 'web',
         'passwords' => 'users',
     ],
 

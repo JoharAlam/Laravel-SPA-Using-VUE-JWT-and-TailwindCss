@@ -19,6 +19,7 @@ class CreateDataTable extends Migration
             $table->string('name');
             $table->string('price');
             $table->string('yearly_sale');
+            $table->string('category');
             $table->timestamps();
         });
     }
