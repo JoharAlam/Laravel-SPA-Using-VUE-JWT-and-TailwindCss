@@ -1,0 +1,49 @@
+/* Scrollbar style
+-------------------------------------------------- */
+.sidebar {
+  }
+.sidebar-inner {
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  flex-direction:column;
+  height:100%;
+  }
+.sidebar-inner .flex-scroll {
+  overflow-y:scroll;
+  min-height:0;
+  -webkit-box-flex:1;
+  flex:1;
+  }
+.scroll-styled {
+  overflow:auto;
+  }
+.scroll-styled::-webkit-scrollbar {
+  width:8px;
+  height:8px;
+  border-left:0;
+  background:rgba(0,0,0,0.1);
+  }
+.scroll-styled::-webkit-scrollbar:hover {
+  background:rgba(0,0,0,0.15);
+  }
+.scroll-styled::-webkit-scrollbar-track {
+  background:none;
+  }
+.scroll-styled::-webkit-scrollbar-thumb {
+  background:rgba(0,0,0,0.1);
+  border-radius:0;
+  }
+
+.dark .scroll-styled::-webkit-scrollbar {
+  width:8px;
+  height:8px;
+  background:rgba(255,255,255,0.1);
+  border-radius:0;
+  }
+.dark .scroll-styled::-webkit-scrollbar:hover {
+  background:rgba(255,255,255,0.15);
+  }
+.dark .scroll-styled::-webkit-scrollbar-thumb {
+  background:rgba(255,255,255,0.1);
+  }

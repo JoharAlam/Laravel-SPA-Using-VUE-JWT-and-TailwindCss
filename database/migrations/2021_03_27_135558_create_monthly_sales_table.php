@@ -15,10 +15,15 @@ class CreateMonthlySalesTable extends Migration
     {
         Schema::create('monthly_sales', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('product');
+            $table->string('category');
+            $table->string('quantity_sold');
             $table->string('year');
             $table->string('month');
-            $table->string('sale');
+            $table->string('monthly_sale');
+            $table->string('first_sale');
+            $table->string('last_sale');
+            $table->string('retailer_id');
             $table->timestamps();
         });
     }

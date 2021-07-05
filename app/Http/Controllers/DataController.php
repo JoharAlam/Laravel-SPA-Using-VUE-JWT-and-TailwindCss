@@ -4,31 +4,54 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Data;
+use App\Sale;
+use App\Purchase;
 use App\MonthlySale;
+use App\YearlySale;
+use App\Stock;
+Use \Carbon\Carbon;
 
 class DataController extends Controller
 {
-    public function shoes()
+    public function sale()
     {
-    	$shoes = Data::where('name','=','Shoes')->orderBy('year', 'ASC')->get();
-    	return response()->json($shoes);
+    	$purchase = Purchase::get();
+    	return response()->json($purchase);
     }
 
-    public function garments()
+    public function yearlySale()
     {
-    	$garments = Data::where('name','=','Garments')->orderBy('year', 'ASC')->get();
-    	return response()->json($garments);
+        $date = Carbon::now();
+
+        $yearly_sale = YearlySale::where('year', '=', $date->year)->get();
+        return response()->json($yearly_sale);
     }
 
-    public function monthlySaleShoes()
+    public function monthlySale()
     {
-        $shoes = MonthlySale::where('name','=','Shoes')->where('year', '=', '2021')->get();
-        return response()->json($shoes);
+        $date = Carbon::now();
+        $dateObj   = Carbon::createFromFormat('!m', $date->month);
+        $month = $dateObj->format('F');
+
+        $monthly_sale = MonthlySale::where('month', '=', $month)->where('year', '=', $date->year)->get();
+        return response()->json($monthly_sale);
     }
 
-    public function monthlySaleGarments()
+    public function stock()
     {
-        $shoes = MonthlySale::where('name','=','Garments')->where('year', '=', '2021')->get();
-        return response()->json($shoes);
+        $stock = Stock::get();
+        return response()->json($stock);
+    }
+
+    public function monthly()
+    {
+        $monthly = MonthlySale::get();
+        return response()->json($monthly);
+    }
+
+    public function yearly()
+    {
+        $yearly = YearlySale::get();
+        return response()->json($yearly);
     }
 }

@@ -1,4 +1,15 @@
 <?php return array (
+  'barryvdh/laravel-dompdf' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'PDF' => 'Barryvdh\\DomPDF\\Facade',
+    ),
+  ),
   'facade/ignition' => 
   array (
     'providers' => 
@@ -22,13 +33,6 @@
     'providers' => 
     array (
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
-    ),
-  ),
-  'jamesdordoy/laravelvuedatatable' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'JamesDordoy\\LaravelVueDatatable\\Providers\\LaravelVueDatatableServiceProvider',
     ),
   ),
   'laravel/sanctum' => 
